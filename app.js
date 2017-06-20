@@ -13,5 +13,7 @@ app.listen(port, function(req, res){
     console.log("Im running on port", port);
 });
 
-app.g
+app.get("/",  function(req, res){
+    res.render("index", {datafile: datafile.users});
+});
 

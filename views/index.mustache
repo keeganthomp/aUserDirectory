@@ -1,0 +1,15 @@
+<div class="profileWrapper">
+    {{#datafile}}
+        <img class ="img" source="{{avatar}}">
+        <p class="name">{{name}}</p>
+
+        {{#job}}
+        <p class="jobDesc">{{job}}, {{company}}</p>
+        {{/job}}
+        {{^job}}
+            <p>Available for hire</p>
+        {{/job}}
+    {{/datafile}}
+</div>
+
+
