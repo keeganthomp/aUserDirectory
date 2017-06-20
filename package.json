@@ -1,7 +1,6 @@
 {
   "name": "userdir",
   "version": "1.0.0",
-  "description": "",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,6 +8,17 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.15.3",
     "mustache-express": "^1.2.4"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keeganthomp/aUserDirectory.git"
+  },
+  "bugs": {
+    "url": "https://github.com/keeganthomp/aUserDirectory/issues"
+  },
+  "homepage": "https://github.com/keeganthomp/aUserDirectory#readme",
+  "description": ""
 }

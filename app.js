@@ -17,3 +17,5 @@ app.get("/",  function(req, res){
     res.render("index", {datafile: datafile.users});
 });
 
+
+app.use("/", express.static("./views"));
