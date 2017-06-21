@@ -19,13 +19,7 @@ app.get("/", function(req, res) {
 app.use("/", express.static("./views"));
 
 app.get("/users/:id", function(req, res) {
-  var profiles = document.querySelectorAll(".profileWrapper");
-  for (i = 0; i < profiles.length; i++) {
-    profiles[i].addEventListener("click", function() {
-      var userId = datafile.users[i][req.params.id];
-      res.render("details", { dataUser: userId });
-    });
-  }
+  res.render("details", { dataUser: datafile.users[req.params.id] });
 });
 
 app.use("/users/:id", express.static("./views"));
