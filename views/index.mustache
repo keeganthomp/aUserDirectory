@@ -13,7 +13,9 @@
     <div class="profileContainer">
     {{#datafile}}
         <div class="profileWrapper">
+            <a href="users/{{id}}">
             <img class="img" src="{{avatar}}">
+            </a>
             <p class="name">{{name}}</p>
             {{#job}}
             <p class="jobDesc">{{job}}, {{company}}</p>

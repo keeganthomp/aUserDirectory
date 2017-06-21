@@ -1,12 +1,19 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
 .imgDetails {
     border-radius: 50%;
     border: 1px solid gray;
     float: left;
+    width: 10rem;
+    height: 10rem;
 }
 
 .profileContainer {
     margin: 0 auto;
-    width: 50%;
+    width: 75%;
 }
 
 .name {
@@ -26,7 +33,7 @@
 
 .profileWrapper {
     display:flex;
-    margin: 25% 0 0 0;
+    margin: 25% 0 0 20%;
 }
 
 .locationAndJob {
@@ -56,6 +63,7 @@ p {
 
 .educationAndSkills {
     margin: 10% 0 0 0;
+    font-size: .85rem;
 }
 
 .edTitle {
@@ -65,5 +73,10 @@ p {
 
 
 .skillset {
-    margin-left: 36px;
+    margin-left: 32px;
 }
+
+.forHire {
+    color: red;
+}
+
