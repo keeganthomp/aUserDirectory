@@ -6,7 +6,7 @@
 
 .profileContainer {
     margin: 0 auto;
-    width: 500px;
+    width: 50%;
 }
 
 .name {
@@ -35,4 +35,35 @@
 
 p {
     margin: 0;
+}
+
+.educationSection {
+    display: flex;
+}
+
+.contactInfo {
+    margin: 1% 0 0 0;
+}
+
+.skillsSection {
+    display: flex;
+    margin-top:7%;
+}
+.education {
+    display: flex;
+    flex-direction: column;
+}
+
+.educationAndSkills {
+    margin: 10% 0 0 0;
+}
+
+.edTitle {
+    margin: 0 5% 0 0;
+    font-weight: bold;
+}
+
+
+.skillset {
+    margin-left: 36px;
 }

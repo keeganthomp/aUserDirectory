@@ -22,19 +22,19 @@
                         {{#address}} 
                             {{#state_or_province}} 
                                 {{#city}}
-                                <p class="city">{{state_or_province}}, {{city}} , {{country}}</p>
+                                <p class="city">{{state_or_province}}, {{city}} , {{country}} | </p>
                                 {{/city}} {{^city}}
-                                <p class="city">{{state_or_province}} , {{country}}</p>
+                                <p class="city">{{state_or_province}} , {{country}} | </p>
                                 {{/city}} 
                             {{/state_or_province}} 
                             {{^state_or_province}}
-                            <p class="city">{{country}}</p>
+                            <p class="city">{{country}} | </p>
                             {{/state_or_province}} 
                         {{/address}} 
                         {{#job}}
-                        <p class="jobDesc">| {{job}}, {{company}}</p>
+                        <p class="jobDesc"> {{job}}, {{company}}</p>
                         {{/job}} {{^job}}
-                        <p class="forHire">Available for hire</p>
+                        <p class="forHire"> Available for hire</p>
                         {{/job}}
                     </div>
                 </div>
@@ -52,15 +52,27 @@
                         {{/email}} 
                     {{/dataUser}}
                 </div>
-            </div>
-            <div class="educationAndSkills">
-                <div class="educationSection">
-                    <p class="edTitle">EDUCATION</p>
-                    <div class="education"></div>
+                <div class="educationAndSkills">
+                 <div class="educationSection">
+                        {{#dataUser}}
+                            {{#university}}
+                        <p class="edTitle">EDUCATION </p>                            
+                        <div class="education">{{university}}</div>
+                            {{/university}}
+
+                            </div>
                     <div class="skillsSection">
+                        <p class="edTitle">SKILLS</p>
+                        <div class="education">
+                            {{#skills}}
+                                 <p class="skillset">{{.}}</p>
+                            {{/skills}}
+                            </div>
+                        {{/dataUser}}                                              
                     </div>
-                </div>
             </div>
+            </div>
+            
         </div>
     </div>
     {{/dataUser}}
