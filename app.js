@@ -19,6 +19,7 @@ app.get("/", function(req, res) {
 app.use("/", express.static("./views"));
 
 app.get("/users/:id", function(req, res) {
+    
   var userIndex = req.params.id -1;
   res.render("details", { dataUser: datafile.users[userIndex] });
 });
