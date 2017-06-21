@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="main.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="main.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="profileContainer">
+            {{#dataUser}}
+        <div class="profileWrapper">
+            
+            <img class="imgDetails" src="{{avatar}}">
+            <p class="name">{{name}}</p>
+            {{#job}}
+            <p class="jobDesc">{{job}}, {{company}}</p>
+            {{/job}} {{^job}}
+            <p class="forHire">Available for hire</p>
+            {{/job}}
+        </div>
+            {{/dataUser}}        
+    </div>
+
+</body>
+
+</html>
+    
+    </body>
+</html>
