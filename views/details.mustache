@@ -1,43 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title></title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="main.css" rel="stylesheet">
-    </head>
-    <body>
-
-        <!DOCTYPE html>
-<html lang="en">
 
 <head>
     <title></title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="main.css" rel="stylesheet">
+    <link href="../user.css" rel="stylesheet">
 </head>
+<html lang="en">
 
 <body>
 
     <div class="profileContainer">
-            {{#dataUser}}
+        {{#dataUser}}
         <div class="profileWrapper">
-            
             <img class="imgDetails" src="{{avatar}}">
-            <p class="name">{{name}}</p>
-            {{#job}}
-            <p class="jobDesc">{{job}}, {{company}}</p>
-            {{/job}} {{^job}}
-            <p class="forHire">Available for hire</p>
-            {{/job}}
+            <div class="userInfoWrapper">
+                <div class="userInfo">
+                    <p class="name">{{name}}</p>
+                    <div class="locationAndJob">
+                        {{#address}} 
+                            {{#state_or_province}} 
+                                {{#city}}
+                                <p class="city">{{state_or_province}}, {{city}} , {{country}}</p>
+                                {{/city}} {{^city}}
+                                <p class="city">{{state_or_province}} , {{country}}</p>
+                                {{/city}} 
+                            {{/state_or_province}} 
+                            {{^state_or_province}}
+                            <p class="city">{{country}}</p>
+                            {{/state_or_province}} 
+                        {{/address}} 
+                        {{#job}}
+                        <p class="jobDesc">| {{job}}, {{company}}</p>
+                        {{/job}} {{^job}}
+                        <p class="forHire">Available for hire</p>
+                        {{/job}}
+                    </div>
+                </div>
+                <div class="contactInfo">
+                    {{#dataUser}}
+                        {{#email}} 
+                            {{#phone}}
+                            <p class="phone">{{phone}} | {{email}}</p>
+                            {{/phone}} {{^phone}}
+                            <p class="email">{{email}}</p>
+                            {{/phone}} 
+                        {{/email}} 
+                        {{^email}}
+                        <p>No Contact Info Listed</p>
+                        {{/email}} 
+                    {{/dataUser}}
+                </div>
+            </div>
+            <div class="educationAndSkills">
+                <div class="educationSection">
+                    <p class="edTitle">EDUCATION</p>
+                    <div class="education"></div>
+                    <div class="skillsSection">
+                    </div>
+                </div>
+            </div>
         </div>
-            {{/dataUser}}        
+    </div>
+    {{/dataUser}}
     </div>
 
 </body>
 
-</html>
-    
-    </body>
 </html>

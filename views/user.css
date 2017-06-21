@@ -1,0 +1,38 @@
+.imgDetails {
+    border-radius: 50%;
+    border: 1px solid gray;
+    float: left;
+}
+
+.profileContainer {
+    margin: 0 auto;
+    width: 500px;
+}
+
+.name {
+    font-size: 3rem;
+}
+
+.userInfoWrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 3%;
+}
+
+.userInfo{
+    display: flex;
+    flex-direction: column;
+}
+
+.profileWrapper {
+    display:flex;
+    margin: 25% 0 0 0;
+}
+
+.locationAndJob {
+    display: flex;
+}
+
+p {
+    margin: 0;
+}
